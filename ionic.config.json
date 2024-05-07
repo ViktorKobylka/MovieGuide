@@ -1,0 +1,7 @@
+{
+  "name": "MovieGuide",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
