@@ -1,0 +1,26 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row id="backColour">
+      <ion-col id="backBtn" size="2" size-sm="2" size-md="2" size-lg="2">
+        <ion-buttons>
+          <p><ion-back-button  defaultHref="/"></ion-back-button></p>
+        </ion-buttons>
+      </ion-col>
+      <ion-col id="name" size="10" size-sm="10" size-md="10" size-lg="10">
+        <p>Movie Guide for Galway</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col id="name" size="12" size-sm="12" size-md="12" size-lg="12">
+        <div class="container">
+          <div *ngFor="let movie of movies" class="movieView">
+            <img src="{{movie.Poster}}">
+            <p>{{movie.Title}}</p>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+  
+</ion-content>
